@@ -1,0 +1,43 @@
+/* copyright Michael Kieffer 2015 */
+
+.hex-table {
+	table-layout:fixed;
+	width: 70%;
+	border-collapse: collapse;
+}
+
+.hex-table td > div, .hex-table .portfolio-box-caption {
+	-ms-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	-moz-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	-webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+	clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hex-table td > div * {
+	max-width: 100%;
+	max-height: 100%;
+	padding-left: 0.7%;
+	padding-right: 0.7%;
+}
+
+.hex-table tr:nth-child(even) > td > div {
+	position: relative;
+	left: 25%;
+	margin-top: -6.25%;
+	margin-bottom: -6.25%;
+}
+
+.hex-table tr:nth-child(odd) > td > div {
+	position: relative;
+	left: -25%;
+	margin-top: -6.25%;
+	margin-bottom: -6.25%;
+}
+
+.hex-table tr:first-child > td > div {
+	margin-top: 0;
+}
+
+.hex-table tr:last-child > td > div {
+	margin-bottom: 0;
+}
